@@ -107,7 +107,7 @@ class Mtce extends Application {
             $this->data['error'] = '';
 
         $fields = array(
-            'ftask'      => form_label('Task description') . form_input('task', $task->task),
+            'ftask'      => form_label('Task description') . form_input('task', $task->desc),
             'fpriority'  => form_label('Priority') . form_dropdown('priority', $this->app->priority(), $task->priority),
             'fsize'  => form_label('Size') . form_dropdown('size', $this->app->size(), $task->size),
             'fgroup'  => form_label('Group') . form_dropdown('group', $this->app->group(), $task->group),
